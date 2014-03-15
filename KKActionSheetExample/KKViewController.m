@@ -26,7 +26,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)actionShowActionSheet:(id)sender
@@ -34,7 +33,6 @@
     KKActionSheet *sheet = [[KKActionSheet alloc] initWithTitle:@"Test actionsheet" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Button index 1",@"Button index 2", nil];
     
     [sheet setTitlesTextColor:[UIColor blackColor]];
-    
     [sheet setTextColors:@[[UIColor redColor], [UIColor blueColor]] forButtonIndexes:@[@(0),@(1)]];
     [sheet showInView:self.view];
 }
