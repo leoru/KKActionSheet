@@ -26,14 +26,36 @@
 }
 
 /**
- *  Overrided showInView
-    For setting button color for all buttons in actionSheet (include Cancel button)
- *
- *  @param view View
+ * Overrided show methods
  */
+
 - (void)showInView:(UIView *)view
 {
     [super showInView:view];
+    [self updateTextColor];
+}
+
+-(void)showFromBarButtonItem:(UIBarButtonItem *)item animated:(BOOL)animated
+{
+    [super showFromBarButtonItem:item animated:animated];
+    [self updateTextColor];
+}
+
+-(void)showFromRect:(CGRect)rect inView:(UIView *)view animated:(BOOL)animated
+{
+    [super showFromRect:rect inView:view animated:animated];
+    [self updateTextColor];
+}
+
+-(void)showFromTabBar:(UITabBar *)view
+{
+    [super showFromTabBar:view];
+    [self updateTextColor];
+}
+
+-(void)showFromToolbar:(UIToolbar *)view
+{
+    [super showFromToolbar:view];
     [self updateTextColor];
 }
 
