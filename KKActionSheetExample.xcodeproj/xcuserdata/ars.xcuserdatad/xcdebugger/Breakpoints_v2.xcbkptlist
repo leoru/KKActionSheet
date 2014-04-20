@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
             endingLineNumber = "69"
-            landmarkName = "-setTextColors:forButtonIndexes:"
+            landmarkName = "-setTitlesTextColor:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -31,8 +31,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
             endingLineNumber = "102"
-            landmarkName = "-updateTextColor"
-            landmarkType = "5">
+            landmarkName = "@implementation KKActionSheet"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
